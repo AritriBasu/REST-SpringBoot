@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Java Theory DA | 19BCE0647</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link th:href="@{main.css}" rel="stylesheet" /> 
+</head>
+<body>
+    <h1>Check if a number is Armstrong or not</h1>
+    Result:
+    <br>
+    <br>
+    <div id="output-container">
+    <p th:text="${output}" id="result-text"/>
+    </div> 
+    <form th:action="@{/}" method="get"> 
+       <input type="submit" value="RECHECK" id="submit-button"></input>
+    </form>
+</body>
+</html>
